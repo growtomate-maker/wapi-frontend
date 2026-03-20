@@ -39,16 +39,11 @@ export interface CodeBlockProps {
   code: string;
   language?: string;
 }
-export interface DeveloperSidebarData {
-  id: string;
-  title: string;
-  icon?: any;
-  section: string;
-}
 
 export interface DeveloperSidebarData {
-  activeTab: string;          // Add this
-  onTabChange: (tab: string) => void; // Add this
+  activeTab: string;
+  onTabChange: (tab: string) => void;
+  // Use optional marks (?) for these to avoid "identical modifier" conflicts
   id?: string;
   title?: string;
   icon?: any;
