@@ -39,3 +39,10 @@ export interface CodeBlockProps {
   code: string;
   language?: string;
 }
+
+export interface DeveloperSidebarData {
+  id: string;
+  label: string;
+  icon: string; // or React.ReactNode
+  section: string;
+}
