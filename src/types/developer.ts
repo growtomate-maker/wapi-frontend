@@ -39,3 +39,9 @@ export interface CodeBlockProps {
   code: string;
   language?: string;
 }
+export interface DeveloperSidebarData {
+  id: string;
+  title: string;
+  icon?: any;
+  section: string;
+}
