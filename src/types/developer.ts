@@ -45,3 +45,12 @@ export interface DeveloperSidebarData {
   icon?: any;
   section: string;
 }
+
+export interface DeveloperSidebarData {
+  activeTab: string;          // Add this
+  onTabChange: (tab: string) => void; // Add this
+  id?: string;
+  title?: string;
+  icon?: any;
+  section?: string;
+}
