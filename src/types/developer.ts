@@ -41,8 +41,7 @@ export interface CodeBlockProps {
 }
 
 export interface DeveloperSidebarData {
-  id: string;
-  label: string;
-  icon: string; // or React.ReactNode
-  section: string;
+  activeTab: string;
+  onTabChange: (tab: string) => void;
+  // If the compiler asks for more properties later, we add them here.
 }
